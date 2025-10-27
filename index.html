@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CSS & JavaScript Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1 class="title">Interactive Web Experience Assignment</h1>
+        <p class="subtitle">CSS3 Animations + JavaScript Functions</p>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="main-content">
+        
+        <!-- Part 1: CSS Animations Demo -->
+        <section class="section" id="css-animations">
+            <h2> Part 1: CSS3 Transitions & Animations</h2>
+            
+            <!-- Button Hover Effects -->
+            <div class="demo-group">
+                <h3>Button Hover Effects</h3>
+                <div class="button-container">
+                    <button class="btn btn-primary">Primary Button</button>
+                    <button class="btn btn-secondary">Secondary Button</button>
+                    <button class="btn btn-accent">Accent Button</button>
+                </div>
+            </div>
+
+            <!-- Smooth Transitions -->
+            <div class="demo-group">
+                <h3>Smooth Transitions & Transforms</h3>
+                <div class="transition-container">
+                    <div class="box box-fade">Fade Effect</div>
+                    <div class="box box-slide">Slide Effect</div>
+                    <div class="box box-scale">Scale Effect</div>
+                    <div class="box box-rotate">Rotate Effect</div>
+                </div>
+            </div>
+
+            <!-- Keyframe Animations -->
+            <div class="demo-group">
+                <h3>Keyframe Animations</h3>
+                <div class="animation-container">
+                    <div class="animated-box bounce">Bounce</div>
+                    <div class="animated-box pulse">Pulse</div>
+                    <div class="animated-box spin">Spin</div>
+                    <div class="animated-box float">Float</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 2: JavaScript Functions Demo -->
+        <section class="section" id="js-functions">
+            <h2> Part 2: JavaScript Functions</h2>
+            
+            <div class="demo-group">
+                <h3>Function Parameters & Return Values</h3>
+                <div class="function-demo">
+                    <div class="input-group">
+                        <label for="num1">Number 1:</label>
+                        <input type="number" id="num1" value="10">
+                    </div>
+                    <div class="input-group">
+                        <label for="num2">Number 2:</label>
+                        <input type="number" id="num2" value="5">
+                    </div>
+                    <div class="button-container">
+                        <button class="btn btn-calculate" onclick="calculateResults()">Calculate</button>
+                    </div>
+                    <div class="results" id="calculation-results"></div>
+                </div>
+            </div>
+
+            <div class="demo-group">
+                <h3>Scope Demonstration</h3>
+                <div class="scope-demo">
+                    <button class="btn btn-scope" onclick="demonstrateScope()">Test Scope</button>
+                    <div class="results" id="scope-results"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Combined CSS + JavaScript -->
+        <section class="section" id="combined-demo">
+            <h2> Part 3: CSS + JavaScript Integration</h2>
+            
+            <!-- Interactive Card Flip -->
+            <div class="demo-group">
+                <h3>Interactive Card Flip</h3>
+                <div class="card-container">
+                    <div class="card" id="flip-card" onclick="flipCard()">
+                        <div class="card-front">
+                            <h4>Click to Flip!</h4>
+                            <p>Front of the card</p>
+                        </div>
+                        <div class="card-back">
+                            <h4>Magic!</h4>
+                            <p>Back of the card</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Animated Modal -->
+            <div class="demo-group">
+                <h3>Animated Modal</h3>
+                <button class="btn btn-modal" onclick="openModal()">Open Modal</button>
+                <div class="modal-overlay" id="modal-overlay">
+                    <div class="modal-content">
+                        <span class="modal-close" onclick="closeModal()">&times;</span>
+                        <h3>Animated Modal</h3>
+                        <p>This modal slides in and fades out with smooth animations!</p>
+                        <button class="btn btn-primary" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Animation Control -->
+            <div class="demo-group">
+                <h3>Loading Animation Control</h3>
+                <div class="loading-controls">
+                    <button class="btn btn-start" onclick="startLoading()">Start Loading</button>
+                    <button class="btn btn-stop" onclick="stopLoading()">Stop Loading</button>
+                </div>
+                <div class="loading-container">
+                    <div class="loading-spinner" id="loading-spinner"></div>
+                    <div class="loading-text" id="loading-text">Ready to load...</div>
+                </div>
+            </div>
+
+            <!-- Dynamic Box Animation -->
+            <div class="demo-group">
+                <h3>Dynamic Box Animation</h3>
+                <div class="animation-controls">
+                    <button class="btn btn-animate" onclick="animateBox('bounce')">Bounce</button>
+                    <button class="btn btn-animate" onclick="animateBox('shake')">Shake</button>
+                    <button class="btn btn-animate" onclick="animateBox('glow')">Glow</button>
+                    <button class="btn btn-reset" onclick="resetBox()">Reset</button>
+                </div>
+                <div class="dynamic-box" id="dynamic-box">Click buttons to animate me!</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Erick Web & JavaScript Assignment</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
